@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World's most boring clicker game. Nothing else, really.">
+    <meta name="keywords" content="boring, clicker, game">
+    <title>The World's Most Boring Clicker Game Ever</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.png">
+    <style>
+        button {
+            width: 500px;
+            height: 500px;
+            font-size: 100px;
+            border: 5px solid black;
+            border-radius: 250px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: lightgreen;
+        }
+
+        #clicker_button:active {
+            background-color: green;
+        }
+    </style>
+    <script>
+        let x = 0;
+        let message = "Wow.";
+        function clicker() {
+            document.getElementById("click_count").innerHTML = "You have clicked the button " + x + " times. " + message;
+            x += 1;
+        }
+    </script>
+</head>
+<body>
+    <header align="center">
+        <h1>The World's Most Boring Clicker Game Ever</h1>
+        <h2>Enjoy... Oh wait, you can't.</h2>
+    </header>
+    <br><br><br><br><br>
+    <main align="center">
+        <button id="clicker_button" onclick="clicker()">Click me.</button>
+        <h1 id="click_count"></h1>
+    </main>
+    <br><br>
+    <footer align="center">
+        <a href="about.html" title="About" target="_blank"><h2>About</h2></a>
+    </footer>
+</body>
+</html>

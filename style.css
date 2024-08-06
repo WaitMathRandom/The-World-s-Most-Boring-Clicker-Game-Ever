@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+body{
+    background-color: beige;
+    font-family: "Raleway";
+}
+
+button{
+    font-family: "Raleway";
+}
